@@ -28,6 +28,10 @@ $(document).ready(function(){
         var YearAwarded = $(this).find('YearAwarded').text();
         var OriginalAmount = $(this).find('OriginalAmount').text();
         var ToSupport = $(this).find('ToSupport').text();
+        //if grant has no description, exclude it from table
+        if(ToSupport === 'None') {
+          ToSupport = '';
+        };
         $('#results').append('<tr><td>' + ProjectTitle + '</td><td>' + YearAwarded + '</td><td>' + OriginalAmount + '</td><td>' + ToSupport + '</td></tr>');
       });
     }//end of success function
