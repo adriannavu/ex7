@@ -32,7 +32,7 @@ $(document).ready(function(){
         if(ToSupport === 'None') {
           ToSupport = '';
         };
-        $('#results').append('<tr><td>' + ProjectTitle + '</td><td>' + YearAwarded + '</td><td>' + OriginalAmount + '</td><td>' + ToSupport + '</td></tr>');
+        $('#results').append('<tr><td>' + ProjectTitle + '</td><td>' + YearAwarded + '</td><td>$' + OriginalAmount + '</td><td>' + ToSupport + '</td></tr>');
       });
     }//end of success function
   });//end of ajax call
